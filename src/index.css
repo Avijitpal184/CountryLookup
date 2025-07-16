@@ -130,7 +130,7 @@ header {
 
 .country_content {
   height: 100%;
-  padding: 20px 20px 25px;
+  padding: 10px 15px 15px;
 }
 
 .country_content .country_details {
@@ -141,15 +141,26 @@ header {
   font-weight: 400;
 }
 
+.text-light{
+  font-size: 16px;
+  color: #555555;
+}
+.text-dark{
+  color: #bdbdbd;
+  font-size: 16px;
+}
+
+
 .country_content b {
   font-weight: 500;
 }
 
 .country_name {
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.7px;
 }
 
 .search-and-filter {

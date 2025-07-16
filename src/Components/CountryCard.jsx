@@ -7,19 +7,18 @@ export const CountryCard = ({ curCountry, name }) => {
   const { theme } = useThemeContext();
 
   return (
-    <NavLink
-      className={`country_card ${
-        theme === "light" ? "text-dark" : "text-light"
-      }`}
-      to={`/country-list/${name}`}
-    >
+    <NavLink className={`country_card `} to={`/country-list/${name}`}>
       <div className="country_flag">
         <img src={flags.png} alt="" />
       </div>
 
       <div className="country_content">
         <h2 className="country_name">{name}</h2>
-        <div className="country_details">
+        <div
+          className={`country_details ${
+            theme === "light" ? "text-light" : "text-dark"
+          }`}
+        >
           <p>
             <b>Population:</b> {population.toLocaleString("en-IN")}
           </p>
