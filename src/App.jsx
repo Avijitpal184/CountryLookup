@@ -13,12 +13,12 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/country-list/",
+      path: "/",
       element: <AppLayout/>,
       errorElement: <ErrorPage/>,
       children: [
         {
-          path: "/country-list/",
+          path: "/",
           element: <CountryList/>,
           loader: getApiData,
         },

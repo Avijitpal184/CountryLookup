@@ -32,8 +32,7 @@ export const CountryList = () => {
       (country) => region === "" || country.region.toLowerCase() === region
     );
 
-
-  // Shimmer effect 
+  // Shimmer effect
   if (loading) {
     return (
       <main className={`${theme === "light" ? "light" : "dark"}`}>
@@ -57,7 +56,7 @@ export const CountryList = () => {
 
   return (
     <>
-      <main className={`${theme} === "light" ? "light" : "dark"`}>
+      <main className={`${theme === "light" ? "light" : "dark"}`}>
         <div className="search-and-filter">
           <Search setSearch={setSearch} search={search} />
 

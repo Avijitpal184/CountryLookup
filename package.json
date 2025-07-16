@@ -1,6 +1,5 @@
 {
   "name": "country-list",
-  "homepage": "https://avijitpal2022.github.io/country-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

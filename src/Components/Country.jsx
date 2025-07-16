@@ -78,7 +78,7 @@ export const Country = () => {
           }}
         >
           <NavLink
-            to={"/country-list/"}
+            to={"/"}
             style={{ textDecoration: "none", color: "#242424" }}
             className={`${theme === "light" ? "text-dark" : "text-light"}`}
           >

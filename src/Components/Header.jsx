@@ -14,7 +14,7 @@ export const Header = () => {
       <header>
         <h2 className="title">
           <Link
-            to="/country-list/"
+            to="/"
             className="nav_brand"
           >
             Where in the world
