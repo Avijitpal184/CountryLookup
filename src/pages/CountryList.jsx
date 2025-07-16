@@ -16,11 +16,9 @@ export const CountryList = () => {
   const countryData = useLoaderData();
 
   useEffect(() => {
-    setTimeout(() => {
-      if (countryData.length > 0) {
-        setLoading(false);
-      }
-    }, 500);
+    if (countryData.length > 0) {
+      setLoading(false);
+    }
   }, [countryData]);
 
   // Search Functionality

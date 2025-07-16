@@ -37,6 +37,7 @@ export const Country = () => {
 
           const fetchBorderNames = await Promise.all(borderPromises);
           setBorderNames(fetchBorderNames);
+          setLoading(false)
         } catch (error) {
           console.log(error);
         }
@@ -46,13 +47,6 @@ export const Country = () => {
     }
   }, [isCountryDataValid, data]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      if (countryData.length > 0) {
-        setLoading(false);
-      }
-    }, 200);
-  }, [countryData]);
 
   // if valid country name not found show this component
   if (!isCountryDataValid) {
@@ -130,9 +124,8 @@ export const Country = () => {
           Back
         </button>
         <div className="country_details">
-
           <img src={flags.svg} alt={flags.alt} />
-          
+
           <div className="country_all_data">
             <h1>{name?.common}</h1>
             <div>
