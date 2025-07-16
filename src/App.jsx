@@ -18,7 +18,7 @@ function App() {
       errorElement: <ErrorPage/>,
       children: [
         {
-          path: "/",
+          index: true,
           element: <CountryList/>,
           loader: getApiData,
         },
